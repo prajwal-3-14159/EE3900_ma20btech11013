@@ -1,11 +1,5 @@
 import numpy as np
 import matplotlib.pyplot as plt
-# # if using termux
-# import subprocess
-# import shlex
-
-
-# end if
 
 
 # DTFT
@@ -28,7 +22,5 @@ plt.grid()  # minor
 
 # if using termux
 plt.savefig('../figs/dtft.pdf')
-plt.savefig('../figs/dtft.eps')
-# subprocess.run(shlex.split("termux-open ../figs/dtft.pdf"))
-# else
+
 plt.show()
