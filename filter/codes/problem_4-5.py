@@ -21,6 +21,7 @@ plt.ylabel('$|H(e^{\jmath\omega})| $')
 plt.grid()  # minor
 
 # if using termux
-plt.savefig('../figs/dtft.pdf')
-
+plt.savefig('../figs/prob_4-5.pdf')
+plt.savefig('../figs/prob_4-5.eps')
+plt.savefig('../figs/prob_4-5.png')
 plt.show()

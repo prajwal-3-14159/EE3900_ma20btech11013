@@ -18,5 +18,6 @@ plt.ylabel('$y(n)$')
 plt.grid()  # minor
 
 plt.savefig("xnyn_c.pdf")
+plt.savefig("xnyn_c.eps")
 plt.show()
 f.close()

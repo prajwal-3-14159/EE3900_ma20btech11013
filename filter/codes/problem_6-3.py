@@ -39,5 +39,7 @@ plt.ylabel('$y(n)$')
 plt.grid()  # minor
 #
 # If using termux
-plt.savefig('../figs/yndft.pdf')
+plt.savefig('../figs/prob_6-3.pdf')
+plt.savefig('../figs/prob_6-3.eps')
+plt.savefig('../figs/prob_6-3.png')
 plt.show()

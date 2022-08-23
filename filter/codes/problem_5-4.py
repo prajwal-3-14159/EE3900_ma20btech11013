@@ -17,5 +17,7 @@ plt.xlabel('$n$')
 plt.ylabel('$h(n)$')
 plt.grid()  # minor
 
-plt.savefig('../figs/hndef.pdf')
+plt.savefig('../figs/prob_5-4.pdf')
+plt.savefig('../figs/prob_5-4.eps')
+plt.savefig('../figs/prob_5-4.png')
 plt.show()
