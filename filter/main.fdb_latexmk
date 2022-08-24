@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1661309740 "/home/locus/PycharmProjects/EE3900/filter/main.tex" "main.pdf" "main" 1661309741
+["pdflatex"] 1661370180 "/home/locus/PycharmProjects/EE3900/filter/main.tex" "main.pdf" "main" 1661370181
   "/etc/texmf/web2c/texmf.cnf" 1660310610 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/locus/PycharmProjects/EE3900/filter/main.tex" 1661309739 27426 f3aa2b5214642fc15fda6f7399c6313c ""
+  "/home/locus/PycharmProjects/EE3900/filter/main.tex" 1661370179 27486 ec7cfeec7f205673c5b9a97f986d074c ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm" 1136768653 2172 fd0c924230362ff848a33632ed45dc23 ""
@@ -87,6 +87,7 @@
   "/usr/share/texlive/texmf-dist/tex/latex/cases/cases.sty" 1586645561 9865 f4184f7819aee103905908cd33492412 ""
   "/usr/share/texlive/texmf-dist/tex/latex/cite/cite.sty" 1425427964 26218 19edeff8cdc2bcb704e8051dc55eb5a7 ""
   "/usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty" 1561238569 51697 f8f08183cd2080d9d18a41432d651dfb ""
+  "/usr/share/texlive/texmf-dist/tex/latex/footmisc/footmisc.sty" 1312311212 25776 d28bd6d82f168f8cb2268584b67a2a98 ""
   "/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg" 1459978653 1213 620bba36b25224fa9b7e1ccb4ecb76fd ""
   "/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg" 1465944070 1224 978390e9c2234eab29404bc21b268d1e ""
   "/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def" 1601931164 19103 48d29b6e2a64cb717117ef65f107b404 ""
@@ -153,10 +154,10 @@
   "figs/prob_7-2-1.png" 1661259202 16582 e5172ec14b5a745fdb490150f3ab9315 ""
   "figs/prob_7-2-2.png" 1661259442 17163 fbe17cd832f5c2c1179e783bda117dda ""
   "figs/prob_7-2-3.png" 1661259453 17889 58ab33c5f1e3f52ec44110615d43d7ab ""
-  "main.aux" 1661309741 5648 ea9380b7ff1a660366393ff928a1922c "pdflatex"
-  "main.out" 1661309741 824 ede0bd39395c52b880a8a7eb6eb76c7d "pdflatex"
-  "main.tex" 1661309739 27426 f3aa2b5214642fc15fda6f7399c6313c ""
-  "main.toc" 1661309741 495 d5eb0a850d99e4c31d0427670f0231e0 "pdflatex"
+  "main.aux" 1661370181 5648 5fbd071a4a1f77ab7ae5dec6defea4be "pdflatex"
+  "main.out" 1661370181 824 ede0bd39395c52b880a8a7eb6eb76c7d "pdflatex"
+  "main.tex" 1661370179 27486 ec7cfeec7f205673c5b9a97f986d074c ""
+  "main.toc" 1661370181 495 2c84b22b65eb481566c4af57933f795c "pdflatex"
   (generated)
   "main.aux"
   "main.log"
