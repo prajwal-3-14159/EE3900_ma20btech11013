@@ -200,12 +200,12 @@ columns=fullflexible
 \begin{abstract}
 This manual provides a simple introduction to digital signal processing.
 \end{abstract}
-\noindent \section{Software Installation}
-\noindent Run the following commands.
+\section{Software Installation}
+Run the following commands
 \begin{lstlisting}
-$ sudo apt update && sudo apt upgrade
-$ sudo apt install libffi-dev libsndfile1 python3-scipy python3-pip python3-numpy python3-matplotlib 
-$ pip3 install cffi pysoundfile 
+sudo apt-get update
+sudo apt-get install libffi-dev libsndfile1 python3-scipy  python3-numpy python3-matplotlib 
+sudo pip install cffi pysoundfile 
 \end{lstlisting}
 \section{Digital Filter}
 \begin{enumerate}[label=\thesection.\arabic*
@@ -214,7 +214,7 @@ $ pip3 install cffi pysoundfile
 \label{prob:input}
 Download the sound file using
 \begin{lstlisting}
-$ wget https://raw.githubusercontent.com/goats-9/ee3900-assignments/main/Assignment_01/codes/Sound_Noise.wav
+$ wget https://github.com/prajwal-3-14159/EE3900_ma20btech11013/blob/main/filter/sound_files/filter_codes_Sound_Noise.wav
 \end{lstlisting}
 \item
 \label{prob:spectrogram}
@@ -227,14 +227,12 @@ are audible along with background noise.
 Write the python code for removal of out of band noise and execute the code.
 
 \solution
-Download the source code using
+Download the source code for the given problem from the link
 \begin{lstlisting}
-$ wget https://raw.githubusercontent.com/goats-9/ee3900-assignments/main/Assignment_01/codes/2_3.py
+$ wget https://raw.githubusercontent.com/prajwal-3-14159/EE3900_ma20btech11013/main/filter/codes/problem_2-3.py
 \end{lstlisting}
-and execute it using
-\begin{lstlisting}
-$ python3 2_3.py
-\end{lstlisting}
+
+
 \item
 The output of the python script in Problem \ref{prob:output} is the audio file \texttt{Sound\_With\_ReducedNoise.wav}. Play the file in the spectrogram in Problem \ref{prob:spectrogram}. What do you observe?
 
@@ -257,22 +255,14 @@ y(n) = 0, n < 0
 \end{multline}
 Sketch $y(n)$.
 
-\solution The following C code calculates $y(n)$.
+\solution The C code for calculating the $y(n)$.
 \begin{lstlisting}
-$ wget https://raw.githubusercontent.com/goats-9/ee3900-assignments/main/codes/3_2.c
+$ wget https://raw.githubusercontent.com/prajwal-3-14159/EE3900_ma20btech11013/main/filter/codes/problem3-1_in_C/problem3_1.c
 \end{lstlisting}
-Run it using
+
+The python code for plotting the Fig. \eqref{fig:xnyn}.
 \begin{lstlisting}
-$ gcc -lm -Wall -g -O2 3_2.c
-$ ./a.out
-\end{lstlisting}
-The following code plots Fig. \eqref{fig:xnyn}.
-\begin{lstlisting}
-$ wget https://raw.githubusercontent.com/goats-9/ee3900-assignments/main/codes/3_2.py
-\end{lstlisting}
-Execute it using
-\begin{lstlisting}
-$ python3 3_2.py
+$ wget https://raw.githubusercontent.com/prajwal-3-14159/EE3900_ma20btech11013/main/filter/codes/problem3-1_in_C/problem3_1_in_C.py
 \end{lstlisting}
 
 \begin{figure}[!ht]
@@ -381,14 +371,11 @@ H\brak{e^{\j \omega}} = H\brak{z = e^{\j \omega}}.
 Plot $\abs{H\brak{e^{\j\omega}}}$.  Comment.  $H(e^{\j \omega})$ is
 known as the {\em Discrete Time Fourier Transform} (DTFT) of $h(n)$.
 
-\solution The following code plots Fig. \eqref{fig:H-w}.
+\solution The following code plots the Fig. \eqref{fig:H-w}.
 \begin{lstlisting}
-$ wget https://raw.githubusercontent.com/goats-9/ee3900-assignments/main/Assignment_01/codes/4_5.py
+$ wget https://raw.githubusercontent.com/prajwal-3-14159/EE3900_ma20btech11013/main/filter/codes/problem_5-2.py
 \end{lstlisting}
-The figure can be generated using
-\begin{lstlisting}
-$ python3 4_5.py
-\end{lstlisting}
+
 Using \eqref{eq:freq_resp}, we observe that $\left|H\brak{e^{\j\omega}}\right|$ is given by
 \begin{align}
 	\left|H\brak{e^{\j\omega}}\right| &= \left|\frac{1 + e^{-2\j\omega}}{1 + \frac{1}{2}e^{-\j\omega}}\right| \\
@@ -482,13 +469,9 @@ using \eqref{eq:anun} and \eqref{eq:z_trans_shift}.
 
 \item Sketch $h(n)$. Is it bounded? Convergent? 
 
-\solution The following code plots Fig. \eqref{fig:h-n}.
+\solution The following code plots the Fig. \eqref{fig:h-n}.
 \begin{lstlisting}
-$ wget https://raw.githubusercontent.com/goats-9/ee3900-assignments/main/Assignment_01/codes/5_2.py
-\end{lstlisting}
-and execute it using
-\begin{lstlisting}
-$ python3 5_2.py
+$ wget https://raw.githubusercontent.com/prajwal-3-14159/EE3900_ma20btech11013/main/filter/codes/problem_5-2.py
 \end{lstlisting}
 
 \begin{figure}[!ht]
@@ -517,13 +500,9 @@ Note that
 	\brak{-\frac{1}{2}}^nu\brak{n} + \brak{-\frac{1}{2}}^{n - 2}u\brak{n - 2} \\
 										 &= 2\brak{\frac{1}{1 + \frac{1}{2}}} = \frac{4}{3}
 \end{align}
-Thus, the given system is stable. The limit is verified at
+Hence, the given system is stable. The limit is verified at
 \begin{lstlisting}
-$ wget https://raw.githubusercontent.com/goats-9/ee3900-assignments/main/Assignment_01/codes/5_3.py
-\end{lstlisting}
-and the code can be run using
-\begin{lstlisting}
-$ python3 5_3.py
+$ wget https://raw.githubusercontent.com/prajwal-3-14159/EE3900_ma20btech11013/main/filter/codes/problem_5-3.py
 \end{lstlisting}
 
 \item 
@@ -534,15 +513,12 @@ h(n) + \frac{1}{2}h(n-1) = \delta(n) + \delta(n-2),
 \end{equation}
 This is the definition of $h(n)$.
 
-\solution The following code plots Fig. \eqref{fig:h-n-inv}. Note that this is
+\solution The following code plots the Fig. \eqref{fig:h-n-inv}. Note, it is
 the same as Fig. \eqref{fig:h-n}.
 \begin{lstlisting}
-$ wget https://raw.githubusercontent.com/goats-9/ee3900-assignments/main/Assignment_01/codes/5_4.py
+$ wget https://raw.githubusercontent.com/prajwal-3-14159/EE3900_ma20btech11013/main/filter/codes/problem_5-4.py
 \end{lstlisting}
-and executed using
-\begin{lstlisting}
-$ python3 5_4.py
-\end{lstlisting}
+
 
 \begin{figure}[!ht]
 	\centering
@@ -562,12 +538,9 @@ Comment. The operation in \eqref{eq:convolution} is known as
 \solution The following code plots Fig. \eqref{fig:y-n-conv}. Note that this is
 the same as $y(n)$ in  Fig. \eqref{fig:xnyn}.
 \begin{lstlisting}
-$ wget https://raw.githubusercontent.com/goats-9/ee3900-assignments/main/Assignment_01/codes/5_5.py
+$ wget https://raw.githubusercontent.com/prajwal-3-14159/EE3900_ma20btech11013/main/filter/codes/problem_5-5.py
 \end{lstlisting}
-and executed using
-\begin{lstlisting}
-$ python3 5_5.py
-\end{lstlisting}
+
 We use Toeplitz matrices for convolution
 \begin{align}
 	\mtx{y} &= \mtx{x} \circledast \mtx{h}\\
@@ -627,11 +600,7 @@ y\brak{n}={\frac {1}{N}}\sum _{k=0}^{N-1}Y\brak{k}\cdot e^{\j 2\pi kn/N},\quad n
 and $Y(k)$. Note that this is the same as $y(n)$ in Fig. \eqref{fig:xnyn}.
 
 \begin{lstlisting}
-$ wget https://raw.githubusercontent.com/goats-9/ee3900-assignments/main/Assignment_01/codes/6_3.py
-\end{lstlisting}
-and executed using
-\begin{lstlisting}
-$ python3 6_3.py
+$ wget https://raw.githubusercontent.com/prajwal-3-14159/EE3900_ma20btech11013/main/filter/codes/problem_6-3.py
 \end{lstlisting}
 
 \begin{figure}[!ht]
@@ -645,12 +614,9 @@ IFFT.
 
 \solution Download the code from
 \begin{lstlisting}
-$ wget https://raw.githubusercontent.com/goats-9/ee3900-assignments/main/Assignment_01/codes/6_4.py
+$ wget https://raw.githubusercontent.com/prajwal-3-14159/EE3900_ma20btech11013/main/filter/codes/problem_6-4.py
 \end{lstlisting}
-and execute it using
-\begin{lstlisting}
-$ python3 6_4.py
-\end{lstlisting}
+
 Observe that Fig. \eqref{fig:y-n-fft} is the same as $y(n)$ in Fig. \eqref{fig:xnyn}.
 
 \begin{figure}
@@ -697,11 +663,7 @@ element-wise multiplication operator as
 The plot of $y(n)$ using the DFT matrix in Fig. \eqref{fig:yn-mtx} is the same as $y(n)$ in 
 Fig. \eqref{fig:xnyn}. Download the code using
 \begin{lstlisting}
-$ wget https://raw.githubusercontent.com/goats-9/ee3900-assignments/main/Assignment_01/codes/6_5.py
-\end{lstlisting}
-and run it using
-\begin{lstlisting}
-$ python3 6_5.py 
+$ wget https://raw.githubusercontent.com/prajwal-3-14159/EE3900_ma20btech11013/main/filter/codes/problem_6-5.py
 \end{lstlisting}
 \end{enumerate}
 
@@ -731,11 +693,7 @@ where the input signal is $x(n)$ and the output signal is $y(n)$ with initial va
 \solution
 The implementation is at
 \begin{lstlisting}
-$ wget https://raw.githubusercontent.com/goats-9/ee3900-assignments/main/Assignment_01/codes/7_1.py
-\end{lstlisting}
-and can be run using
-\begin{lstlisting}
-$ python3 7_1.py
+$ wget https://raw.githubusercontent.com/prajwal-3-14159/EE3900_ma20btech11013/main/filter/codes/problem_7-1.py
 \end{lstlisting}
 \item Repeat all the exercises in the previous sections for the above $a$ and $b$.
 
@@ -788,11 +746,11 @@ Substituting the values,
 \end{align}
 The values $r(i)$, $p(i)$, $k(i)$ and thus the impulse response function are computed and plotted at
 \begin{lstlisting}
-$ wget https://raw.githubusercontent.com/goats-9/ee3900-assignments/main/Assignment_01/codes/7_2_1.py
+$ wget https://raw.githubusercontent.com/prajwal-3-14159/EE3900_ma20btech11013/main/filter/codes/problem_7-2-1.py
 \end{lstlisting}
 The filter frequency response is plotted at
 \begin{lstlisting}
-$ wget https://raw.githubusercontent.com/goats-9/ee3900-assignments/main/Assignment_01/codes/7_2_2.py
+$ wget https://raw.githubusercontent.com/prajwal-3-14159/EE3900_ma20btech11013/main/filter/codes/problem_7-2-2.py
 \end{lstlisting}
 Observe that for a series $t_n = r^n$, $\frac{t_{n + 1}}{t_n} = r$.
 By the ratio test, $t_n$ converges if $|r| < 1$. We note that
@@ -807,12 +765,9 @@ Fig. \eqref{fig:butter-imp}, $h(n)$ is negligible after $n \geq 64$, and we
 can apply a 64-bit FFT to get y(n). The following code uses the DFT matrix
 to generate $y(n)$ in Fig. \eqref{fig:butter-out}.
 \begin{lstlisting}
-$ wget https://raw.githubusercontent.com/goats-9/ee3900-assignments/main/Assignment_01/codes/7_2_3.py
+$ wget https://raw.githubusercontent.com/prajwal-3-14159/EE3900_ma20btech11013/main/filter/codes/problem_7-2-3.py
 \end{lstlisting}
-The codes can be run all at once by typing
-\begin{lstlisting}
-$ python3 7_2_*.py
-\end{lstlisting}
+
 
 \begin{figure}[!htb]
 	\includegraphics[width=\columnwidth]{figs/prob_7-2-1.png}
