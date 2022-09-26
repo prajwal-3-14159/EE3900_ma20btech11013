@@ -175,7 +175,7 @@ columns=fullflexible
 
 \vspace{3cm}
 
-\title{Assignment - 1}
+\title{Assignment - 2}
 
 \author{Prajwaldeep Kamble} 
 
@@ -196,33 +196,51 @@ columns=fullflexible
 \bigskip
 
 \begin{abstract}
-This document contains the solution to Exercise 2.28 (b) of Oppenheim.
+This document contains the solution to Exercise 3.41 (a) of Oppenheim.
 \end{abstract}
 
-\problem Determine if the given signal, $x[n] = sin(\pi n/19)$, is periodic, if yes determine it's period. 
+\problem Determine the coefficients $A_m$ in the homogeneous solution if $y[-1] = 1$ and $y[0] = 0$.
 \break
 
-\solution since the given signal is a sinusoidal function hence it's periodic.
+\solution On substituting the initial conditions in the homogeneous solution ($y_h[n] = A_1(\frac{1}{2})^n + A_2(\frac{1}{4})^n$), we get,
 
 \begin{align}
-    x[n+38] = sin(\pi \frac{(n+38)}{19})
+    y_h[-1] = A_1(\frac{1}{2})^{-1} + A_2(\frac{1}{4})^{-1} = 1 
     \label{eq:mov-avg}
 \end{align}
+And,
 \begin{align}
-    sin(\pi \frac{(n+38)}{19}) = sin(\pi \frac{n}{19} + 2\pi) 
+    y_h[0] = A_1 + A_2 = 0    
 \end{align}
+We get a system of linear equations,
 \begin{align}
-    sin(\pi \frac{n}{19} + 2\pi) = sin(\pi \frac{n}{19}) = x[n] 
+    \begin{bmatrix}
+        \frac{1}{2} & \frac{1}{4} \\
+        1 & 1
+    \end{bmatrix}
+    \begin{bmatrix}
+        A_1 \\
+        A_2
+    \end{bmatrix}
+    =
+    \begin{bmatrix}
+        1 \\
+        0
+    \end{bmatrix} 
 \end{align}
+Solving the above system of equations, we get,
 \begin{align}
-    \therefore x[n+38] = x[n] 
+    \begin{bmatrix}
+        A_1 \\
+        A_2
+    \end{bmatrix}
+    =
+    \begin{bmatrix}
+        \frac{1}{2} \\
+        -\frac{1}{2}
+    \end{bmatrix} 
 \end{align}
-$\therefore$ the period is 38, as the sine funtion is periodic with period $2\pi$.
+$\therefore$ the the coefficients $A_m$ in the homogeneous solution are $\frac{1}{2}$ and $-\frac{1}{2}$.
 
-Alternatively, We know that the sine and cosine waves period can be obtained by $\omega = \frac{2.\pi}{B}$, where B is coefficient of the variable term in the sine function
 
-\begin{align}
-    \omega = \frac{2.\pi}{\pi/19} = \frac{2.19.\pi}{\pi} = 38
-\end{align}
-Hence, the signal is periodioc with period 38.
 \end{document}
