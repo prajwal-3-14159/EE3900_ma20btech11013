@@ -175,7 +175,7 @@ columns=fullflexible
 
 \vspace{3cm}
 
-\title{Assignment - 2}
+\title{Assignment - 1}
 
 \author{Prajwaldeep Kamble} 
 
@@ -199,48 +199,19 @@ columns=fullflexible
 This document contains the solution to Exercise 3.41 (a) of Oppenheim.
 \end{abstract}
 
-\problem Determine the coefficients $A_m$ in the homogeneous solution if $y[-1] = 1$ and $y[0] = 0$.
-\break
-
-\solution On substituting the initial conditions in the homogeneous solution ($y_h[n] = A_1(\frac{1}{2})^n + A_2(\frac{1}{4})^n$), we get,
-
+\problem In the figure P3.41-1, h[n] is the impulse response of the LTI system within the inner box. 
+The input to system $h[n]$ is $v[n]$, and the output is $w[n]$. The $z$-transform of $h[n]$, $H(z)$ exists in the following region of convergence.
 \begin{align}
-    y_h[-1] = A_1(\frac{1}{2})^{-1} + A_2(\frac{1}{4})^{-1} = 1 
-    \label{eq:mov-avg}
-\end{align}
-And,
-\begin{align}
-    y_h[0] = A_1 + A_2 = 0    
-\end{align}
-We get a system of linear equations,
-\begin{align}
-    \begin{bmatrix}
-        \frac{1}{2} & \frac{1}{4} \\
-        1 & 1
-    \end{bmatrix}
-    \begin{bmatrix}
-        A_1 \\
-        A_2
-    \end{bmatrix}
-    =
-    \begin{bmatrix}
-        1 \\
-        0
-    \end{bmatrix} 
-\end{align}
-Solving the above system of equations, we get,
-\begin{align}
-    \begin{bmatrix}
-        A_1 \\
-        A_2
-    \end{bmatrix}
-    =
-    \begin{bmatrix}
-        \frac{1}{2} \\
-        -\frac{1}{2}
-    \end{bmatrix} 
-\end{align}
-$\therefore$ the the coefficients $A_m$ in the homogeneous solution are $\frac{1}{2}$ and $-\frac{1}{2}$.
+    0 < r_{min} < |z| < r_{max} < \infty
+\end{align}  
+%image inserted here    
+\begin{figure}[!ht]
+	\centering
+    \includegraphics[width=0.5\textwidth]{figureP3.41-1.png}
+    \caption{Figure P3.41-1}
+\end{figure}
 
+\solution Yes, $h[n]$ will be BIBO stable if it's ROC includes the unit cicle. 
 
+$\therefore$ if $r_{min} < 1$ and $r_{max} > 1$, then LTI system is BIBO stable.
 \end{document}

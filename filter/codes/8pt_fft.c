@@ -1,28 +1,37 @@
 #include <stdio.h>
-#include <stdlib.h>
+#include <stdbool.h>
 #include <math.h>
+#include <stdlib.h>
+#include <complex.h>
 #include <time.h>
-#include <sys/time.h>
-#include <sys/resource.h>
-#include <sys/types.h>
+
+#define EPS 1000000 // 10^6
 
 
-#define PI 3.141592653589793238462
-
-int main()
+complex double *myfft(int n, complex double *a) 
 {
-    int i, j, k, n, m, l, p, q, r, s, t, u, v, w, x, y, z;
-    int N = 8;
-    double a[8][8], b[8][8], c[8][8], d[8][8], e[8][8], f[8][8], g[8][8], h[8][8];
-    double A[8][8], B[8][8], C[8][8], D[8][8], E[8][8], F[8][8], G[8][8], H[8][8];
-    double temp1, temp2, temp3, temp4, temp5, temp6, temp7, temp8;
-    double temp9, temp10, temp11, temp12, temp13, temp14, temp15, temp16;
-    double temp17, temp18, temp19, temp20, temp21, temp22, temp23, temp24;
-    double temp25, temp26, temp27, temp28, temp29, temp30, temp31, temp32;
-    double temp33, temp34, temp35, temp36, temp37, temp38, temp39, temp40;
-    double temp41, temp42, temp43, temp44, temp45, temp46, temp47, temp48;
-    double temp49, temp50, temp51, temp52, temp53, temp54, temp55, temp56;
-    double temp57, temp58, temp59, temp60, temp61, temp62, temp63, temp64;
-    
-    return 0;
+	if (n == 1) return a;
+	complex double *g = (complex double *)malloc(n/2*sizeof(complex double));
+	complex double *h = (complex double *)malloc(n/2*sizeof(complex double));
+	for (int i = 0; i < n; i++) 
+    { 
+		if (i%2) h[i/2] = a[i];
+		else g[i/2] = a[i];
+	}
+	g = myfft(n/2, g);
+	h = myfft(n/2, h);
+	for (int i = 0; i < n; i++) a[i] = g[i%(n/2)] + cexp(-I*2*M_PI*i/n)*h[i%(n/2)];
+	free(g); free(h);
+	return a;
+}
+
+int main() 
+{ 
+	int n = 8;
+	complex double *a = (complex double *)malloc(sizeof(complex double)*n);
+	a[0] = 1.0, a[1] = 2.0, a[2] = 3.0, a[3] = 4.0, a[4] = 2.0, a[5] = 1.0, a[6] = 0.0, a[7] = 0.0;
+	a = myfft(n, a);
+	for (int i = 0; i < n; i++) printf("X(%d) = %lf + %lfj\n", i, creal(a[i]), cimag(a[i]));
+	free(a);
+	return 0;
 }
