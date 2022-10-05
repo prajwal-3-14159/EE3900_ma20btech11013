@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1664303949 "/home/locus/PycharmProjects/EE3900/oppenheim_assignment-1/main.tex" "main.pdf" "main" 1664303949
+["pdflatex"] 1664311180 "/home/locus/PycharmProjects/EE3900/oppenheim_assignment-1/main.tex" "main.pdf" "main" 1664311180
   "/etc/texmf/web2c/texmf.cnf" 1660310610 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/locus/PycharmProjects/EE3900/oppenheim_assignment-1/main.tex" 1664303949 7016 c7d6ace8a264d46b3aba72540447e377 ""
+  "/home/locus/PycharmProjects/EE3900/oppenheim_assignment-1/main.tex" 1664311180 7016 c7d6ace8a264d46b3aba72540447e377 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm" 1136768653 2172 fd0c924230362ff848a33632ed45dc23 ""
@@ -126,9 +126,9 @@
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1660583902 4379155 98693266ff65f58d9f98aff394de12d2 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1660583937 2800982 25a2ffb7164a82dbe896b65033924fac ""
   "figureP3.41-1.png" 1664302956 15525 3f5bca56a011cc6d6080a6ea0ba268bb ""
-  "main.aux" 1664303949 846 b7d6599c39e943049f37fa6643047d50 "pdflatex"
-  "main.out" 1664303949 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "main.tex" 1664303949 7016 c7d6ace8a264d46b3aba72540447e377 ""
+  "main.aux" 1664311180 846 b7d6599c39e943049f37fa6643047d50 "pdflatex"
+  "main.out" 1664311180 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "main.tex" 1664311180 7016 c7d6ace8a264d46b3aba72540447e377 ""
   (generated)
   "main.aux"
   "main.log"

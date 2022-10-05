@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1664164720 "/home/locus/PycharmProjects/EE3900/filter/main.tex" "main.pdf" "main" 1664164721
+["pdflatex"] 1664783890 "/home/locus/PycharmProjects/EE3900/filter/main.tex" "main.pdf" "main" 1664783892
   "/etc/texmf/web2c/texmf.cnf" 1660310610 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/locus/PycharmProjects/EE3900/filter/main.tex" 1664164720 39388 8ba8138106baca9ccab9d7aff44ff7ed ""
+  "/home/locus/PycharmProjects/EE3900/filter/main.tex" 1664783889 39388 8ba8138106baca9ccab9d7aff44ff7ed ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm" 1136768653 2172 fd0c924230362ff848a33632ed45dc23 ""
@@ -156,10 +156,10 @@
   "figs/prob_7-2-1.png" 1661259202 16582 e5172ec14b5a745fdb490150f3ab9315 ""
   "figs/prob_7-2-2.png" 1661259442 17163 fbe17cd832f5c2c1179e783bda117dda ""
   "figs/prob_7-2-3.png" 1661259453 17889 58ab33c5f1e3f52ec44110615d43d7ab ""
-  "main.aux" 1664164721 6848 9fa0fe7e99897438a68aed2c34913f5d "pdflatex"
-  "main.out" 1664164721 882 edfc8e4b8727edba1bb28508a87337f9 "pdflatex"
-  "main.tex" 1664164720 39388 8ba8138106baca9ccab9d7aff44ff7ed ""
-  "main.toc" 1664164721 555 f0475525d9674633acbc80ef5b943a2a "pdflatex"
+  "main.aux" 1664783891 6848 9fa0fe7e99897438a68aed2c34913f5d "pdflatex"
+  "main.out" 1664783891 882 edfc8e4b8727edba1bb28508a87337f9 "pdflatex"
+  "main.tex" 1664783889 39388 8ba8138106baca9ccab9d7aff44ff7ed ""
+  "main.toc" 1664783891 555 f0475525d9674633acbc80ef5b943a2a "pdflatex"
   (generated)
   "main.aux"
   "main.log"
