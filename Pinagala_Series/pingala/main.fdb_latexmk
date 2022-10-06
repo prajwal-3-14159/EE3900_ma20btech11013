@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1665031117 "/home/locus/PycharmProjects/EE3900/Pinagala_Series/pingala/main.tex" "main.pdf" "main" 1665031118
+["pdflatex"] 1665032001 "/home/locus/PycharmProjects/EE3900/Pinagala_Series/pingala/main.tex" "main.pdf" "main" 1665032001
   "/etc/texmf/web2c/texmf.cnf" 1660310610 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/locus/PycharmProjects/EE3900/Pinagala_Series/pingala/main.tex" 1665031116 17338 a34f9ac524bef7cd7d7ec52fce8da527 ""
+  "/home/locus/PycharmProjects/EE3900/Pinagala_Series/pingala/main.tex" 1665032000 17384 54b62dc6e64d90a1225964dd6e909819 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm" 1136768653 2172 fd0c924230362ff848a33632ed45dc23 ""
@@ -141,10 +141,10 @@
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1660583937 2800982 25a2ffb7164a82dbe896b65033924fac ""
   "figs/prob_2-2.png" 1664801300 16921 019b3847e497acf9cb98c11bcc3ef813 ""
   "figs/prob_2-5.png" 1664821692 16250 ef44019c35f96dc272ba272a77d4bfa9 ""
-  "main.aux" 1665031117 2297 e1b7690f8b0743cac3242b4ae80898d1 "pdflatex"
-  "main.out" 1665031117 377 6ef0fda02ae42ab5eb9699af63378c50 "pdflatex"
-  "main.tex" 1665031116 17338 a34f9ac524bef7cd7d7ec52fce8da527 ""
-  "main.toc" 1665031117 214 b7d77648735507f5510b34423b2e2c1f "pdflatex"
+  "main.aux" 1665032001 2297 e1b7690f8b0743cac3242b4ae80898d1 "pdflatex"
+  "main.out" 1665032001 377 6ef0fda02ae42ab5eb9699af63378c50 "pdflatex"
+  "main.tex" 1665032000 17384 54b62dc6e64d90a1225964dd6e909819 ""
+  "main.toc" 1665032001 214 b7d77648735507f5510b34423b2e2c1f "pdflatex"
   (generated)
   "main.aux"
   "main.log"
